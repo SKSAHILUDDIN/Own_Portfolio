@@ -41,7 +41,7 @@
             text-decoration: none;
             color:antiquewhite;
             display: inline-block;
-            transition: all 0.3s ease;
+            transition: all 0.3s ease-out;
 
         }
         nav ul li a:hover{
@@ -84,7 +84,10 @@
             
             font-weight: 300;
             font-family: 'Orbitron', cursive;
-}
+        }
+        #element{
+            color:rgb(1, 230, 255);
+        }
 
         
 
@@ -113,6 +116,7 @@
         <section class="firstsection">
             <div class = "leftsection">Hello! I am <span class = "neon">Sahil</span>
            <div>I am a undergraduate Student  </div>
+           <span id="element"></span>
            </div>
             <div class = "rightsection">
                 <img src="wp.png" alt="">
@@ -121,8 +125,14 @@
         
         </section>
     </main>
-
-
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+    var typed = new Typed('#element', {
+      strings:['Web Devloper','Software Engineer','Photgrapher','Videoeditor','Android and ios developer','UI & UX developer','Painter'],
+      typeSpeed: 70,
+    });
+  </script>
+    
 
 </body>
 
