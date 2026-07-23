@@ -24,8 +24,8 @@
             flex-direction: row;
             justify-content: space-around;
             align-items : center;
-            height: 80px;
-            background-color: rgb(42, 10, 122);
+            height: 70px;
+            background-color: rgb(32, 2, 108);
         }
         nav ul{
             display:flex;
@@ -37,8 +37,22 @@
             
 
         }
+        nav ul li a{
+            text-decoration: none;
+            color:antiquewhite;
+            display: inline-block;
+            transition: all 0.3s ease;
+
+        }
+        nav ul li a:hover{
+            color:rgb(1, 230, 255);
+            transform: scale(1.1);
+            font-weight: 600;
+            transform: scale(1.1);
+
+        }
         .left{
-            font-size: 2.7rem;
+            font-size: 2.4rem;
             margin:0 20px;
             font-family:"Great Vibes";
         }
@@ -48,7 +62,9 @@
         .firstsection{
             display: flex;
             justify-content: space-around;
-            margin: 50px 0;
+            align-items: center;
+             margin: 70px 0;
+            
         }
         .firstsection > div{
             width: 30%;
@@ -64,7 +80,7 @@
             width: 300px;}
         .neon{
             color:rgb(1, 230, 255);
-            font-size: 2.4rem;
+            font-size: 2.2rem;
             
             font-weight: 300;
             font-family: 'Orbitron', cursive;
@@ -84,11 +100,11 @@
             <div class="left">Sahil's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>services</li>
-                    <li>Past Projects</li>
-                    <li>contact</li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">services</a></li>
+                    <li><a href="/">Past Projects</a></li>
+                    <li><a href="/">contact</a></li>
                 </ul>
             </div>
         </nav>
