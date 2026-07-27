@@ -182,17 +182,60 @@
         footer {
             background-color: #32325594;
             height: 200px;
+            font-family: "Great Vibes";
+            font-size: 1.08rem;
+            flex: 1;
         }
 
         .footer {
             display: flex;
-            padding: 50px 150px;
+            padding: 30px 50px;
             justify-content: space-between;
+        }
+
+        .footer .copyright {
+            color: rgb(75, 244, 232);
+            font-size: 1.5rem;
+
+        }
+
+        .footer2 h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .footer3 h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 0px;
+            padding: 5px 0px;
+            font-size: 1.3rem;
+
         }
 
         .footer ul {
             list-style: none;
         }
+
+        .footer ul li {
+            margin: 5px 0;
+        }
+         .footer2 ul li a,
+        .footer3 ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.2s;
+        }
+        .footer2 ul li a:hover,
+        .footer3 ul li a:hover {
+            color: rgba(136, 0, 255, 0.693);
+            padding-left: 3px;
+        }
+
     </style>
 </head>
 
@@ -302,7 +345,9 @@
     <footer>
         <div class="footer">
             <div class="footer1">
-                <h3>Sahil the Developer</h3>
+                <h3>
+                    <span class="copyright">Sahil the Developer</span>
+                </h3>
                 <p>Building ideas into real life code and creativity</p>
             </div>
             <div class="footer2">
@@ -314,18 +359,25 @@
                     <li><a href="/">Past Projects</a></li>
                     <li><a href="/">Contact</a></li>
                 </ul>
-            </div>    
+            </div>
             <div class="footer3">
-                    <h3>Contact Me</h3>
-                    <p>Gmail: sksahiluddin68@gmail.com</p>
-                    <p>GitHub</p>
-                    <p>LinkedIn</p>
+                <h3>Contact Me</h3>
+                 <ul>
+                    <li><a href=""mailto:sksahiluddin68@gmail.com">sksahiluddin68@gmail.com</a></li>
+                    <li><a href="https://github.com/SKSAHILUDDIN" target=" _blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/sksahiluddin/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/itsahil2005?igsh=c2p5dmFlc25sajZ6" target="_blank">Instagram</a></li>
+                    
+                </ul>
+                
             </div>
 
-            </div>
-            <div class="footer-bottom">
-                <p>&#xA9 2026 Sahil the Developer. All rights reserved.</p>
-            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                &#xA9 2026 Sahil the Developer. All rights reserved.
+            </p>
+        </div>
 
         </div>
 
