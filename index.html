@@ -48,6 +48,7 @@
             color: antiquewhite;
             display: inline-block;
             transition: all 0.3s ease-out;
+            cursor: pointer;
 
         }
 
@@ -55,7 +56,7 @@
             color: rgb(1, 230, 255);
             transform: scale(1.1);
             font-weight: 600;
-            transform: scale(1.1);
+            transform: scale(1.08);
 
         }
 
@@ -149,7 +150,7 @@
             width: 1px;
             background-color: white;
             margin: 0;
-            
+
         }
 
         .image2 {
@@ -284,7 +285,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            filter: blur(3px);
+            filter: blur(4px);
             opacity: 0.7;
             z-index: -1;
         }
@@ -299,6 +300,7 @@
             align-items: center;
             height: 100%;
             text-align: center;
+            font-size: 1.1rem;
 
         }
 
@@ -306,34 +308,105 @@
             position: relative;
             min-height: 100vh;
             overflow: hidden;
+            text-align: center;
+
         }
 
         .services-video {
             position: absolute;
             top: 0;
             left: 0;
-
             width: 100%;
             height: 100%;
-
             object-fit: cover;
-
-            filter: blur(4px);
-
+            filter: blur(3px);
             opacity: 0.35;
-
             z-index: -1;
+
         }
 
-        .services-content {
+
+        .services-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
             position: relative;
             z-index: 1;
-
             width: 80%;
-            margin: auto;
-
+            margin: 60px auto 0;
             padding: 80px 0;
 
+        }
+
+        .service-box {
+
+            width: 280px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            transition: 0.3s;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        .service-box:hover {
+
+            transform: translateY(-8px);
+            border-color: rgb(1, 230, 255);
+            box-shadow: 0 0 70px rgb(1, 230, 255);
+        }
+
+        .service-btn {
+
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 30px;
+            background: rgba(61, 12, 134, 0.516);
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .service-btn:hover {
+
+            background: rgba(246, 246, 169, 0.995);
+            color: rgb(4, 0, 32);
+            transform: scale(1.08);
+        }
+
+        .contact-section {
+            position: relative;
+            min-height: 100vh;
+            overflow: hidden;
+
+        }
+
+        .contact-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(3px);
+            opacity: 0.35;
+            z-index: -1;
+
+        }
+
+        .contact-content {
+            position: relative;
+            z-index: 1;
+            width: 80%;
+            margin: auto;
+            padding: 80px 0;
+            font-size: 1.1rem;
             text-align: center;
         }
     </style>
@@ -455,7 +528,8 @@
 
                     <p>
                         Hello! I am Sahil, an undergraduate student passionate about
-                        programming, web development, and technology.
+                        programming, web development, and technology.I have builted multiple websites android apps and
+                        currently working on an API
                     </p>
                 </div>
 
@@ -469,39 +543,60 @@
                 <source src="services.mp4" type="video/mp4">
             </video>
 
-            <div class="services-content">
+            <h1> Services </h1>
 
-
-
-                <h1>Services</h1>
+            <div class="services-container">
 
                 <div class="service-box">
                     <h2>Web Development</h2>
 
                     <p>
-                        I create responsive and interactive websites using
-                        HTML, CSS, and JavaScript.
+                        I create responsive websites using HTML, CSS and JavaScript.
                     </p>
+
+                    <button class="service-btn">Learn More</button>
+                </div>
+
+                <div class="service-box">
+                    <h2> App Development</h2>
+
+                    <p>
+                        Android and iOS applications with modern technologies.
+                    </p>
+
+                    <button class="service-btn">Learn More</button>
+                </div>
+
+                <div class="service-box">
+                    <h2>Graphic Design</h2>
+                    <p>
+                        Logos, posters, social media designs and UI mockups.
+                    </p>
+                    <button class="service-btn">Learn More</button>
                 </div>
 
             </div>
 
         </section>
 
-        </section>
+        <hr>
         <section class="contact-section" id="contact">
-            <hr>
-            <span class="text-antique">Get In Touch</span>
 
-            <h1>Contact Me</h1>
+            <video class="contact-video" autoplay muted loop playsinline>
+                <source src="contact.mp4" type="video/mp4">
+            </video>
+            <div class="contact-content">
+                <span class="text-antique">Get In Touch</span>
 
-            <p>
-                Email me at:
-                <a href="mailto:sksahiluddin68@gmail.com">
-                    sksahiluddin68@gmail.com
-                </a>
-            </p>
+                <h1>Contact Me</h1>
 
+                <p>
+                    Email me at:
+                    <a href="mailto:sksahiluddin68@gmail.com">
+                        sksahiluddin68@gmail.com
+                    </a>
+                </p>
+            </div>
         </section>
     </main>
     <footer>
