@@ -106,14 +106,6 @@
             color: rgb(1, 230, 255);
         }
 
-        .secondsection {
-            max-width: 80vw;
-            margin: auto;
-            font-size: 0.8rem;
-            min-height: 130vh;
-
-        }
-
         main hr {
             border: 0;
             height: 2px;
@@ -122,101 +114,134 @@
             box-shadow: 0 0 10px rgb(1, 230, 255);
         }
 
+        .secondsection {
+
+            width: 90%;
+            margin: auto;
+            padding: 80px 0px;
+            text-align: center;
+
+        }
+
         .secondsection h1 {
-            font-size: 1.9rem;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 300;
+            margin-top: 10px;
+            font-size: 2rem;
+            font-weight: 400;
+           
 
         }
 
         .text-antique {
-            font-size: 1.08rem;
-            color: antiquewhite;
+
+            color: rgb(185, 185, 185);
+            font-size: 1rem;
+
         }
 
-        .secondsection .box {
-            background-color: azure;
-            width: 100%;
-            height: 2px;
-            margin: 150px 0;
+
+        .cards-container {
+
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 80px;
 
         }
 
-        .secondsection .vertical {
-            position: relative;
-            height: 90px;
-            width: 1px;
-            background-color: white;
-            margin: 0;
+        .journey-card {
+
+            width: 190px;
+            background: rgba(5, 14, 109, 0.696);
+            border: 1px solid rgba(4, 175, 243, 0.77);
+            border-radius: 35px;
+            overflow: hidden;
+            transition: .4s;
+        }
+
+        .journey-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgb(1, 230, 255);
+        }
+
+        .journey-card img {
+
+            width: 100%;
+            height: 110px;
+            object-fit: cover;
+            transition: .4s;
+        }
+
+        .journey-card:hover img {
+           transform: scale(1.07);
+        }
+
+        .journey-card h2 {
+
+            margin-top: 10px;
+            font-size: 1.12rem;
+            font-weight: 500;
+        }
+
+        .journey-card h4 {
+
+            color: rgb(135, 243, 255);
+            font-size: .8rem;
+            margin: 6px 0;
+            font-weight: 400;
+        }
+
+        .journey-card p {
+            padding: 0 12px;
+            font-size: .8rem;
+            line-height: 1.45;
+            color: #f8dada;
+
+        }
+        
+        .card-tags {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 15px 10px 18px;
+        }
+
+        .card-tags span {
+            border: 1px solid rgb(0, 255, 251);
+            color: rgb(0, 253, 255);
+            border-radius: 20px;
+            padding: 4px 10px;
+            font-size: .7rem;
+            transition: .3s;
+            font-weight: 300;
 
         }
 
-        .image2 {
-            width: 68px;
-            position: absolute;
-            top: -75px;
-            left: 50%;
-            transform: translateX(-50%);
+        .card-tags span:hover {
+            background: rgb(1, 230, 255);
+            color: black;
+            transform: scale(1.1);
+            font-weight: bold;
 
         }
+        @media(max-width:768px) {
 
-        .vertical-title1 {
-            position: absolute;
-            top: 95px;
-            left: 50%;
-            width: 120px;
-            font-size: 16px;
-            text-align: center;
-            transform: translateX(-50%);
-
-        }
-
-        .vertical-description1 {
-            position: absolute;
-            top: 165px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 130px;
-            font-size: 14px;
-            color: gray;
-            text-align: center;
-
-        }
-
-        @media (max-width: 1200px) {
-
-            .secondsection .box {
-                flex-direction: column;
-                height: auto;
-                background: none;
-                gap: 220px;
+            .cards-container {
+                gap: 15px;
             }
-
-            .secondsection .vertical {
-                width: 2px;
-                margin: 0 auto;
-            }
-
-            .vertical-title1,
-            .vertical-description1 {
-                left: 30px;
-                transform: none;
-                text-align: left;
+            .journey-card {
+                width: 170px;
             }
 
         }
 
         .projects-section {
-
             min-height: 95vh;
             width: 100%;
-
         }
 
         .projects-content {
-
             width: 80%;
             margin: auto;
             text-align: center;
@@ -262,11 +287,11 @@
         }
 
         .project-card h2 {
-           margin-top: 10px;
+            margin-top: 3px;
         }
 
         .project-card p {
-            padding: 15px;
+            padding: 10px;
             color: wheat;
         }
 
@@ -282,14 +307,14 @@
 
             border: 1.2px solid rgb(121, 242, 255);
             border-radius: 20px;
-            padding: 6px 15px;
+            padding: 6px 10px;
             color: rgb(1, 230, 255);
             font-size: .9rem;
 
         }
 
-        .project-card  .status {
-            margin-top: 20px;
+        .project-card .status {
+            margin-top: 4px;
             color: red;
             font-weight: bold;
         }
@@ -298,7 +323,7 @@
             display: flex;
             justify-content: center;
             gap: 20px;
-            margin: 30px;
+            margin: 15px;
         }
 
         .project-btn {
@@ -580,31 +605,18 @@
         .contact-btn {
             text-decoration: none;
             color: white;
-
             border: 2px solid rgb(246, 2460, 169);
-
             padding: 14px 28px;
-
             border-radius: 30px;
-
             transition: .3s;
         }
 
         .contact-btn:hover {
-
-
             background: rgba(246, 246, 169, 0.995);
             color: rgb(0, 0, 0);
-
             transform: translateY(-4px);
-
             box-shadow: 0 0 20px rgb(1, 230, 255);
             font-weight: bold;
-            .resume-btn:hover{
-
-    box-shadow:0 0 30px rgb(1,230,255);
-
-}
         }
     </style>
 </head>
@@ -637,81 +649,97 @@
 
         </section>
         <hr>
-        <section class="secondsection">
-            <span class="text-antique">My journey</span>
-            <h1>Work Experience</h1>
-            <div class="box">
-                <div class="vertical">
-                    <img class="image2" src="html.jpeg" alt="">
-                    <div class="vertical-title1">
-                        HTML Developer
-                        <div>(2019-2021)</div>
-                    </div>
-                    <div class="vertical-description1">
-                        Built multiple responsive websites using HTML, CSS, and JavaScript.
+        <section class="secondsection" id="journey">
+
+            <span class="text-antique">My Journey</span>
+            <h1>Technical Journey</h1>
+
+            <div class="cards-container">
+
+                <div class="journey-card">
+                    <img src="html.jpeg" alt="HTML">
+                    <h2>HTML Developer</h2>
+                    <h4>2019 - 2021</h4>
+
+                    <p>
+                        Built multiple responsive websites using HTML,
+                        CSS and JavaScript.
+                    </p>
+
+                    <div class="card-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
                     </div>
                 </div>
 
+                <div class="journey-card">
+                    <img src="Graphic-designer.jpeg" alt="Graphic Design">
+                    <h2>Graphic Designer</h2>
+                    <h4>2021 - 2022</h4>
 
-                <div class="vertical">
-                    <img class="image2" src="Graphic-designer.jpeg" alt="">
-                    <div class="vertical-title1">
-                        Graphic Designer
-                        <div>(2021-2022)</div>
-                    </div>
-                    <div class="vertical-description1">
-                        Created visually engaging designs by combining creativity,
-                        typography, colors, and visual elements to communicate ideas effectively.
+                    <p>
+                        Designed posters, banners and social media graphics
+                        with a focus on typography and branding.
+                    </p>
+
+                    <div class="card-tags">
+                        <span>Photoshop</span>
+                        <span>Canva</span>
                     </div>
                 </div>
 
+                <div class="journey-card">
+                    <img src="js.jpeg" alt="JavaScript">
+                    <h2>JavaScript</h2>
+                    <h4>2022 - 2023</h4>
 
-                <div class="vertical">
-                    <img class="image2" src="js.jpeg" alt="">
-                    <div class="vertical-title1">
-                        JavaScript Developer
-                        <div>(2022-2023)</div>
-                    </div>
-                    <div class="vertical-description1">
-                        Developed interactive
-                        web features using
-                        JavaScript, adding
-                        dynamic functionality
-                        and user interaction.
+                    <p>
+                        Built interactive websites using JavaScript,
+                        animations and DOM manipulation.
+                    </p>
+
+                    <div class="card-tags">
+                        <span>JavaScript</span>
+                        <span>DOM</span>
                     </div>
                 </div>
 
+                <div class="journey-card">
+                    <img src="c.jpeg" alt="C">
+                    <h2>C Programming</h2>
+                    <h4>2023 - 2024</h4>
 
-                <div class="vertical">
-                    <img class="image2" src="c.jpeg" alt="">
-                    <div class="vertical-title1">
-                        C programing
-                        <div>(2023-2024)</div>
-                    </div>
-                    <div class="vertical-description1">
-                        Built a strong foundation in C programming,
-                        focusing on problem-solving,
-                        logic building, and fundamental programming concepts.
+                    <p>
+                        Strengthened programming fundamentals,
+                        logic building and problem solving.
+                    </p>
+
+                    <div class="card-tags">
+                        <span>C</span>
                     </div>
                 </div>
 
+                <div class="journey-card">
+                    <img src="cpp.jpeg" alt="C++">
+                    <h2>C++ Programming</h2>
+                    <h4>2024 - Present</h4>
 
-                <div class="vertical">
-                    <img class="image2" src="cpp.jpeg" alt="">
-                    <div class="vertical-title1">
-                        CPP programing
-                        <div>(2024-2025)</div>
-                    </div>
-                    <div class="vertical-description1">
-                        Developed programming skills using C++, with a focus on
-                        object-oriented programming, data structures, algorithms, and problem-solving.
+                    <p>
+                        Learning object-oriented programming,
+                        data structures and algorithms.
+                    </p>
+
+                    <div class="card-tags">
+                        <span>C++</span>
+                        <span>DSA</span>
                     </div>
                 </div>
+
             </div>
 
-
         </section>
-        
+
         <hr>
 
         <section class="projects-section" id="projects">
@@ -758,7 +786,7 @@
         </section>
 
         <hr>
-        
+
         <section class="about-section" id="about">
 
 
