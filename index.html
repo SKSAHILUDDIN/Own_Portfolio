@@ -95,6 +95,13 @@
 
         }
 
+        .menu-toggle {
+            display: none;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+
         .left {
             font-size: 2.3rem;
             margin: 10px 20px;
@@ -684,6 +691,36 @@
                 margin: 5px;
             }
 
+            .menu-toggle {
+                display: block;
+            }
+
+            .right {
+                display: none;
+            }
+
+            .right.active {
+                display: block;
+            }
+
+            .right ul {
+
+                flex-direction: column;
+
+                align-items: center;
+
+                gap: 20px;
+
+                padding-top: 20px;
+
+            }
+
+            nav {
+
+                flex-wrap: wrap;
+
+            }
+
             .left {
                 margin-bottom: 15px;
             }
@@ -792,8 +829,16 @@
 <body>
     <header>
         <nav>
-            <div class="left">Sahil's Portfolio</div>
-            <div class="right">
+
+            <div class="left">
+                Sahil's Portfolio
+            </div>
+
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+
+            <div class="right" id="nav-links">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -803,6 +848,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
+
         </nav>
     </header>
     <main>
@@ -1152,6 +1198,33 @@
             } else {
                 nav.classList.remove("scrolled");
             }
+
+        });
+    </script>
+    <script>
+        const menu = document.getElementById("menu-toggle");
+        const nav = document.getElementById("nav-links");
+
+        menu.addEventListener("click", function () {
+
+            nav.classList.toggle("active");
+
+            if (nav.classList.contains("active")) {
+                menu.innerHTML = "&times;";
+            } else {
+                menu.innerHTML = "☰";
+            }
+
+        });
+
+        document.querySelectorAll(".right a").forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                nav.classList.remove("active");
+                menu.innerHTML = "☰";
+
+            });
 
         });
     </script>
