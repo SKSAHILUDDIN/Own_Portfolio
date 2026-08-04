@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <title>SkSahiluddin_developementPortfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,9 +11,24 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <style>
+        html,
+        body {
+
+            overflow-x: hidden;
+
+        }
+
         * {
             margin: 0;
             padding: 0;
+        }
+
+        img {
+
+            max-width: 100%;
+
+            height: auto;
+
         }
 
         html {
@@ -169,7 +185,8 @@
 
         .journey-card {
 
-            width: 190px;
+            width: 85%;
+            max-width: 220px;
             background: rgba(5, 14, 109, 0.696);
             border: 1px solid rgba(4, 175, 243, 0.77);
             border-radius: 35px;
@@ -281,7 +298,8 @@
 
         .project-card {
 
-            width: 300px;
+            width: 95%;
+            max-width: 320px;
 
             background: rgba(7, 43, 160, 0.333);
             border: 1px solid rgb(8, 8, 8);
@@ -372,7 +390,7 @@
             width: 100%;
             margin: auto;
             font-size: 0.8rem;
-            height: 100vh;
+            min-height: 100vh;
             position: relative;
             overflow: hidden;
             font-weight: 250;
@@ -441,7 +459,7 @@
             padding: 14px 28px;
             border-radius: 30px;
             font-size: 17px;
-            transition: .3ms;
+            transition: .2s;
         }
 
         .download-btn:hover {
@@ -489,7 +507,8 @@
 
         .service-box {
 
-            width: 280px;
+            width: 90%;
+            max-width: 320px;
             padding: 25px;
             background: rgba(255, 255, 255, 0.08);
             border: 1px solid rgba(255, 255, 255, 0.15);
@@ -569,7 +588,7 @@
         .contact-btn {
             text-decoration: none;
             color: white;
-            border: 2px solid rgb(246, 2460, 169);
+            border: 2px solid rgb(246, 246, 169);
             padding: 14px 28px;
             border-radius: 30px;
             transition: .3s;
@@ -595,7 +614,7 @@
             display: flex;
             padding: 30px 50px;
             justify-content: space-between;
-            gap: 90px;
+            gap: 25px;
         }
 
         .footer .copyright {
@@ -641,6 +660,131 @@
         .footer3 ul li a:hover {
             color: rgb(166, 1, 255);
             transform: translateX(3px);
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding-top: 140px;
+            }
+
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            nav ul li {
+                margin: 5px;
+            }
+
+            .left {
+                margin-bottom: 15px;
+            }
+
+            .firstsection {
+
+                flex-direction: column-reverse;
+                text-align: center;
+                min-height: auto;
+                padding: 50px 20px;
+
+            }
+
+            .firstsection>div {
+                width: 100%;
+
+            }
+
+            .rightsection img {
+                width: 220px;
+
+            }
+
+            .leftsection {
+                margin-top: 30px;
+                font-size: 1.3rem;
+
+            }
+
+            .about-content {
+                width: 90%;
+
+            }
+
+            .about-content h1 {
+                font-size: 2rem;
+
+            }
+
+            .about-content p {
+                font-size: 1rem;
+
+            }
+
+            .resume-buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                align-items: center;
+
+            }
+
+            .cards-container {
+                justify-content: center;
+
+            }
+
+            .projects-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+
+
+            .services-container {
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            .contact-content {
+                width: 90%;
+
+            }
+
+            .contact-content h1 {
+                font-size: 2rem;
+
+            }
+
+            .contact-content p {
+                font-size: 1rem;
+
+            }
+
+            .footer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 40px;
+
+            }
+
+            footer {
+                height: auto;
+                padding: 40px 20px;
+
+            }
+
+
+
         }
     </style>
 </head>
