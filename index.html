@@ -15,20 +15,40 @@
             padding: 0;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            scroll-margin-top: 80px;
+        }
+
         body {
             background-color: rgb(4, 0, 32);
             color: rgb(255, 250, 250);
             font-family: 'Poppins', sans-serif;
             font-weight: 200;
+            padding-top: 70px;
         }
 
         nav {
             display: flex;
-            flex-direction: row;
             justify-content: space-around;
             align-items: center;
             height: 70px;
-            background-color: rgb(32, 2, 108);
+            background: rgba(32, 2, 108, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: 0.3s;
+        }
+
+        nav.scrolled {
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.35);
         }
 
         nav ul {
@@ -976,6 +996,19 @@
         var typed = new Typed('#element', {
             strings: ['Web Developer', 'Software Engineer', 'Photographer', 'Videoeditor', 'Android and ios developer', 'UI and UX developer', 'Graphic Designer'],
             typeSpeed: 70,
+        });
+    </script>
+    <script>
+        window.addEventListener("scroll", function () {
+
+            const nav = document.querySelector("nav");
+
+            if (window.scrollY > 20) {
+                nav.classList.add("scrolled");
+            } else {
+                nav.classList.remove("scrolled");
+            }
+
         });
     </script>
 
