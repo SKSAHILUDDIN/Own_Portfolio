@@ -3,201 +3,181 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Graphic Design | Sahil</title>
+    <title>Graphic Design | Sahil</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<style>
+    <style>
+        * {
 
-*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Poppins, sans-serif;
+        }
 
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins,sans-serif;
+        body {
 
-}
+            background: #040020;
+            color: white;
+        }
 
-body{
+        header {
+            background: rgba(32, 2, 108, .85);
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(10px);
+        }
 
-background:#040020;
-color:white;
+        header a {
+            color: white;
+            font-size: 28px;
+            text-decoration: none;
+        }
 
-}
+        .container {
+            max-width: 950px;
+            margin: auto;
+            padding: 70px 30px;
+        }
 
-header{
+        h1 {
+            font-size: 3rem;
+            color: #00e6ff;
+        }
 
-background:#20026c;
-padding:20px;
-text-align:center;
+        h2 {
+            margin-top: 40px;
+            color: #bf00ff;
+        }
 
-}
+       p {
+            margin-top: 15px;
+            line-height: 1.8;
+            font-size: 18px;
+            color: antiquewhite;
+        }
+        ul {
 
-header a{
+            padding-left: 25px;
+            margin-top: 20px;
+        }
 
-color:white;
-font-size:28px;
-text-decoration:none;
+        li {
 
-}
+            margin: 12px 0;
+            list-style: decimal;
+        }
 
-.container{
+        .skills {
 
-max-width:950px;
-margin:auto;
-padding:70px 30px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
 
-}
+        .skills span {
 
-h1{
+            padding: 10px 20px;
+            border: 1px solid cyan;
+            border-radius: 30px;
+        }
 
-font-size:3rem;
-color:#00e6ff;
+        .btn {
 
-}
+            display: inline-block;
+            margin-top: 40px;
+            padding: 15px 35px;
+            background: #3d0c86;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
 
-h2{
+        }
 
-margin-top:40px;
-color:#00e6ff;
+        .btn:hover {
+            background: rgba(246, 246, 169, 0.995);
+            color: rgb(0, 0, 0);
+            transform: translatey(-5px);
+            transition-duration: 0.4s;
+            box-shadow: 0 0 30px rgb(0, 238, 255);
+            font-weight: bold;
 
-}
+        }
 
-p{
+        footer {
 
-margin-top:20px;
-line-height:1.8;
+            margin-top: 60px;
+            background: #12003a;
+            text-align: center;
+            padding: 30px;
 
-}
-
-ul{
-
-padding-left:25px;
-margin-top:20px;
-
-}
-
-li{
-
-margin:12px 0;
-
-}
-
-.skills{
-
-display:flex;
-gap:15px;
-flex-wrap:wrap;
-margin-top:25px;
-
-}
-
-.skills span{
-
-padding:10px 20px;
-border:1px solid cyan;
-border-radius:30px;
-
-}
-
-.btn{
-
-display:inline-block;
-margin-top:40px;
-padding:15px 35px;
-background:#3d0c86;
-color:white;
-text-decoration:none;
-border-radius:30px;
-
-}
-
-.btn:hover{
-
-background:#00e6ff;
-color:black;
-
-}
-
-footer{
-
-margin-top:60px;
-background:#12003a;
-text-align:center;
-padding:30px;
-
-}
-
-</style>
+        }
+    </style>
 
 </head>
 
 <body>
 
-<header>
+    <header>
 
-<a href="index.html">← Back to Portfolio</a>
+        <a href="index.html">← Back to Portfolio</a>
 
-</header>
+    </header>
 
-<div class="container">
+    <div class="container">
 
-<h1>Graphic Design</h1>
+        <h1>Graphic Design</h1>
 
-<p>
+        <p>
 
-I design clean and modern visuals that help brands communicate effectively and stand out.
+            I design clean and modern visuals that help brands communicate effectively and stand out.
 
-</p>
+        </p>
 
-<h2>Services</h2>
+        <h2>Services</h2>
 
-<ul>
+        <ul>
 
-<li>Logo Design</li>
+            <li>Logo Design</li>
+            <li>Social Media Posts</li>
+            <li>Business Posters</li>
+            <li>YouTube Thumbnails</li>
+            <li>UI Mockups</li>
 
-<li>Social Media Posts</li>
+        </ul>
 
-<li>Business Posters</li>
+        <h2>Tools</h2>
 
-<li>YouTube Thumbnails</li>
+        <div class="skills">
 
-<li>UI Mockups</li>
+            <span>Photoshop</span>
+            <span>Illustrator</span>
+            <span>Canva</span>
+            <span>Figma</span>
 
-</ul>
+        </div>
 
-<h2>Tools</h2>
+        <a class="btn" href="mailto:sksahiluddin68@gmail.com?subject=Graphic Design Project">
 
-<div class="skills">
+            Request a Design
 
-<span>Photoshop</span>
+        </a>
 
-<span>Illustrator</span>
+    </div>
 
-<span>Canva</span>
+    <footer>
 
-<span>Figma</span>
+         &#xA9 2026 Sahil Portfolio
 
-</div>
-
-<a class="btn"
-href="mailto:sksahiluddin68@gmail.com?subject=Graphic Design Project">
-
-Request a Design
-
-</a>
-
-</div>
-
-<footer>
-
-© 2026 Sahil Portfolio
-
-</footer>
+    </footer>
 
 </body>
 
